@@ -2,6 +2,7 @@ class Ordenador(val tipo: TipoOrdenador = TipoOrdenador.BASICO, nombre: String, 
 
     override fun promocionNavidad(rebaja: Int) {
        if (precio > 500){
+           println("Descuento aplicado con éxito")
            val dineroRebaja = precio * rebaja / 100
            precio -=  dineroRebaja
        }

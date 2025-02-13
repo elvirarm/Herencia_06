@@ -10,12 +10,13 @@ open class Articulo(var nombre: String, var precio: Double) {
     }
 
     open fun promocionNavidad(rebaja: Int){
+        println("Descuento aplicado con éxito")
         val dineroRebaja = precio * rebaja / 100
         precio -=  dineroRebaja
 
     }
 
     override fun toString(): String {
-        return "{$nombre} - ${"%.2f".format(precio)}€)"
+        return "{$nombre} - ${"%.2f".format(precio)}€ (ID: {$id})"
     }
 }
