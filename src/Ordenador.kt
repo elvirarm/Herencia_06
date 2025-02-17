@@ -6,6 +6,8 @@ class Ordenador(val tipo: TipoOrdenador = TipoOrdenador.BASICO, nombre: String, 
            println("Descuento aplicado con éxito")
            val dineroRebaja = precio * rebaja / 100
            precio -=  dineroRebaja
+       }else{
+           println("No se puede aplicar el descuento, el artículo supera el precio")
        }
     }
 

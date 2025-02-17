@@ -7,7 +7,7 @@ fun main() {
     val ordenador1 = Ordenador(TipoOrdenador.GAMING, "Ordenador 1", 1299.99)
     val ordenador2 = Ordenador(TipoOrdenador.BASICO, "Ordenador 2", 399.99)
 
-    val totalArticulo = mutableListOf<Articulo>(art1, art2)
+    val totalArticulo = mutableListOf<Articulo>(art1, art2, ordenador1, ordenador2)
 
     for (elemento in totalArticulo){
         elemento.promocionNavidad(10)
