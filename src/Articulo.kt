@@ -1,13 +1,20 @@
 open class Articulo(var nombre: String, var precio: Double) {
 
+    companion object{
+        var totalArticulos = 0
+
+        fun generarId(): Int{
+
+            totalArticulos += 1
+            return totalArticulos
+        }
+    }
+
+
+
     private val id = generarId()
 
-    fun generarId(){
 
-        var totalArticulos = 0
-        totalArticulos += 1
-
-    }
 
     open fun promocionNavidad(rebaja: Int){
         println("Descuento aplicado con éxito")
